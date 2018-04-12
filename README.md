@@ -1,3 +1,23 @@
+**Note: this is a fork from [mapbox/mapbox-gl-leaflet](https://github.com/mapbox/mapbox-gl-leaflet) to make it work as common-js-module.**
+```javascript
+var L = require('leaflet')
+var MapBoxGLLeaflet = require('mapbox-gl-leaflet-commonjs')
+
+
+//initialize plugin
+MapBoxGLLeaflet(L)
+
+var map = L.map('map').setView([38.912753, -77.032194], 15);
+var gl = L.mapboxGL({
+    accessToken: token,
+    style: 'mapbox://styles/mapbox/bright-v8'
+}).addTo(map);
+
+ var gl = L.mapboxGL({
+      style: 'url to style',
+      accessToken: 'no-token'
+    }).addTo(view.map)
+```
 **Note: this tool is experimental and is not actively supported by Mapbox. For support, please open an issue in this repository.**
 
 ## Mapbox GL Leaflet
