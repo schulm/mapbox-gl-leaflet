@@ -8,10 +8,6 @@ var MapBoxGLLeaflet = require('mapbox-gl-leaflet-commonjs')
 MapBoxGLLeaflet(L)
 
 var map = L.map('map').setView([38.912753, -77.032194], 15);
-var gl = L.mapboxGL({
-    accessToken: token,
-    style: 'mapbox://styles/mapbox/bright-v8'
-}).addTo(map);
 
  var gl = L.mapboxGL({
       style: 'url to style',
